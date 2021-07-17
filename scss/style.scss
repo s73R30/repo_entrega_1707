@@ -1,0 +1,111 @@
+$background_principal: (violet);
+
+* {
+    margin: 7px;
+    padding: 5px;
+    box-sizing: content-box;
+}
+
+.fondo {
+    background-color: rgb(97, 4, 97);
+    background: linear-gradient(rgb(97, 4, 97) 70%, rgb(189, 5, 189))
+}
+
+.parrafo {
+    font-family: 'Roboto', sans-serif;
+    background-color: $background_principal;
+    }
+
+.parrafo2 {
+    font-style: normal;
+    background-color: $background_principal;
+}
+
+img{
+    display:block;
+    margin:auto;
+    }
+
+/*******MIXINS*********************/ 
+@mixin container($ancho, $alto, $color) {
+    width: $ancho;
+    height: $alto;
+    background-color: $color;
+    border-radius: 5%;
+    padding: 5px 0;
+    margin: 2px auto;
+    text-align: center;
+    margin: 5px;
+    } 
+
+    .parrafoA {
+    @include container(1000px, 30px, rgb(145, 88, 145))
+    }
+    .parrafoB{
+    @include container(1000px, 30px, rgb(156, 56, 156))
+    }
+
+/*********NESTING********************/
+
+.menu {
+    margin:10px;
+    }
+
+ul {
+    background-color: salmon;
+    margin-left: auto;
+    border-radius: 30px;
+
+    li {
+        font:{
+            size: 20px;
+        }
+    }
+}
+
+/*************EXTEND****************/
+%btn {
+    width: 800px;
+    text-align: center;
+    padding: 5px 0;
+    margin: 2px auto;
+    border-radius: 10px;
+    color: #FFFFFF;
+    }
+    .btn_team {
+        @extend %btn;
+        background-color: rgb(97, 4, 97)
+    }
+    .btn_profes {
+        @extend %btn;
+        background-color: rgb(156, 56, 156);
+    }
+    .btn_encuentro {
+        @extend %btn;
+        background-color: rgb(145, 88, 145);
+    }
+    .btn_email {
+        @extend %btn;
+        background-color: rgb(156, 56, 156);
+    }
+    .btn_santiago {
+        @extend %btn;
+        background-color: rgb(145, 88, 145);
+    }
+
+
+/***********************************/ 
+table {
+    border-style: dotted;
+    border-top: 6px double #303fc2;
+    border-right: 2px double #cf0a3b;
+    border-bottom: 6px double #303fc2;
+    border-left: 2px double #cf0a3b;
+    background: rgb(172, 70, 172);
+    margin-bottom: 8px;
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-top: 8px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

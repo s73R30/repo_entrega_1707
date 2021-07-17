@@ -1,0 +1,91 @@
+* {
+  margin: 7px;
+  padding: 5px;
+  box-sizing: content-box; }
+
+.fondo {
+  background-color: #610461;
+  background: linear-gradient(#610461 70%, #bd05bd); }
+
+.parrafo {
+  font-family: 'Roboto', sans-serif;
+  background-color: violet; }
+
+.parrafo2 {
+  font-style: normal;
+  background-color: violet; }
+
+img {
+  display: block;
+  margin: auto; }
+
+/*******MIXINS*********************/
+.parrafoA {
+  width: 1000px;
+  height: 30px;
+  background-color: #915891;
+  border-radius: 5%;
+  padding: 5px 0;
+  margin: 2px auto;
+  text-align: center;
+  margin: 5px; }
+
+.parrafoB {
+  width: 1000px;
+  height: 30px;
+  background-color: #9c389c;
+  border-radius: 5%;
+  padding: 5px 0;
+  margin: 2px auto;
+  text-align: center;
+  margin: 5px; }
+
+/*********NESTING********************/
+.menu {
+  margin: 10px; }
+
+ul {
+  background-color: salmon;
+  margin-left: auto;
+  border-radius: 30px; }
+  ul li {
+    font-size: 20px; }
+
+/*************EXTEND****************/
+.btn_team, .btn_profes, .btn_encuentro, .btn_email, .btn_santiago {
+  width: 800px;
+  text-align: center;
+  padding: 5px 0;
+  margin: 2px auto;
+  border-radius: 10px;
+  color: #FFFFFF; }
+
+.btn_team {
+  background-color: #610461; }
+
+.btn_profes {
+  background-color: #9c389c; }
+
+.btn_encuentro {
+  background-color: #915891; }
+
+.btn_email {
+  background-color: #9c389c; }
+
+.btn_santiago {
+  background-color: #915891; }
+
+/***********************************/
+table {
+  border-style: dotted;
+  border-top: 6px double #303fc2;
+  border-right: 2px double #cf0a3b;
+  border-bottom: 6px double #303fc2;
+  border-left: 2px double #cf0a3b;
+  background: #ac46ac;
+  margin-bottom: 8px;
+  margin-left: 8px;
+  margin-right: 8px;
+  margin-top: 8px;
+  padding-top: 10px;
+  padding-bottom: 10px; }
